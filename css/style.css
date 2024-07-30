@@ -1,0 +1,287 @@
+/*
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body p {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav ul li {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* INDEX */
+
+/* barre de navigation */
+
+.logo {
+  width: 178.07px;
+  height: 60.48px;
+}
+
+.barre-nav-container {
+  background-color: #e1d6ce;
+  width: 120em;
+  height: 5em;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.barre-nav-container li {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.barre-nav-container li a {
+  padding-right: 2.5em;
+  text-decoration: none;
+  color: #0f0c26;
+}
+
+i {
+  color: #0f0c26;
+  font-size: 18px;
+}
+
+/* hero haeder */
+
+.hero-container {
+  background-image: url("../images/img-hero-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 73.3652vh;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.img-overlay {
+  width: 100%;
+  min-height: 73.3652vh;
+  background-color: #0f0c26a4;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.hero-text {
+  position: relative;
+}
+
+#h1-home {
+  top: 4em;
+  left: 1.5em;
+  text-align: left;
+}
+
+.msg-hero-header {
+  font-size: 16px;
+  text-align: left;
+  top: 19em;
+  left: 5em;
+}
+
+#h1-home,
+.msg-hero-header {
+  position: absolute;
+}
+
+.btn-container {
+  position: relative;
+}
+
+button {
+  height: 45px;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header button {
+  top: 23em;
+  position: absolute;
+}
+
+.header-btn1 {
+  width: 120px;
+  background-color: #fff;
+  border-style: solid;
+  border-color: #d73106;
+  color: #d73106;
+  left: 4em;
+}
+
+.header-btn2 {
+  width: 178px;
+  background-color: #9032b0;
+  border-style: solid;
+  border-color: #fff;
+  color: #fff;
+  left: 12em;
+}
+
+/* section à propos */
+
+.aPropos-container {
+  background-color: #f0eae6;
+  width: 100%;
+  height: 26.0625;
+  margin-top: 7em;
+  display: flex;
+  justify-content: center;
+}
+
+.img-aPropos {
+  width: 380.65px;
+  height: 325px;
+}
+
+.aPropos-extrait {
+  width: 503px;
+  height: 101px;
+  padding: 2em 2em;
+}
+
+.img-aPropos {
+  width: 380.65px;
+  height: 325.87px;
+  padding: 2.5em 0 2.5em;
+}
+
+.btn-aPropos {
+  width: 178px;
+  background-color: #9032b0;
+  color: #fff;
+  left: 12em;
+  border-style: none;
+}
+
+/* section stickers galerie, commande, blog */
+
+.page-stickers-container {
+  background-color: #f7f6f8;
+  width: 100%;
+  height: 24em;
+  margin-top: 5em;
+}
+
+.sticker-galerie {
+  width: 88.4px;
+  height: 152.6px;
+  position: absolute;
+  left: 2em;
+  top: 0em;
+}
+
+.sticker-commande {
+  width: 151.726px;
+  height: 152.6px;
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+}
+
+.sticker-blog {
+  width: 88.4px;
+  height: 152.6px;
+  left: 2em;
+  top: 0;
+  position: absolute;
+}
+
+.bg-sticker {
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+  position: relative;
+  transition: transform 0.2s;
+  margin: auto;
+}
+
+.bg-sticker:hover {
+  transform: scale(1.5);
+}
+
+.bg-sticker-galerie {
+  background-color: #e2bcb2;
+  box-shadow: 0 15px 15px 0 #f2896340;
+}
+
+.bg-sticker-commande {
+  background-color: #dfd7d3;
+  box-shadow: 0 15px 15px 0 #0b083c21;
+}
+
+.bg-sticker-blog {
+  background-color: #756e82;
+  box-shadow: 0 15px 15px 0 #0b083c21;
+}
+
+.page-stickers-container h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+.orange-hover:hover {
+  color: #d73106;
+}
+
+.purple-hover:hover {
+  color: #9032b0;
+}
+
+.page-stickers-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sticker-container {
+  width: 350px;
+  margin: 2em 1em 1em;
+}
+
+.sticker-text-container {
+  text-align: center;
+}
+
+.page-stickers-container a {
+  text-decoration: none;
+}
+
+/* section les dernières peintures */
