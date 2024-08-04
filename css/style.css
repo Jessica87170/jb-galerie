@@ -28,11 +28,15 @@ h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
-nav ul li {
+nav ul li a {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0f0c26;
 }
 
 /* INDEX */
@@ -46,7 +50,7 @@ nav ul li {
 
 .barre-nav-container {
   background-color: #e1d6ce;
-  width: 120em;
+  width: 100%;
   height: 5em;
   position: fixed;
   display: flex;
@@ -54,26 +58,43 @@ nav ul li {
   align-items: center;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   z-index: 100;
+  margin-top: -0.5em;
 }
 
 .barre-nav-container li {
   display: inline-block;
-  font-weight: 600;
-  font-size: 16px;
+}
+
+.barre-nav-icones {
+  display: flex;
+}
+
+.langue {
+  padding-right: 1em;
 }
 
 .barre-nav-container li a {
   padding-right: 2.5em;
   text-decoration: none;
-  color: #0f0c26;
 }
 
-i {
+.barre-nav-icones a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #0f0c26;
+  padding-right: 1em;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-left: 0.25em;
+}
+
+.fa-solid .fa-globe i,
+.fa-solid .fa-cart-shopping i {
   color: #0f0c26;
   font-size: 18px;
 }
 
-/* hero haeder */
+/* hero header */
 
 .hero-container {
   background-image: url("../images/img-hero-header.jpg");
@@ -81,6 +102,7 @@ i {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
   min-height: 73.3652vh;
   color: #fff;
   font-size: 24px;
@@ -123,12 +145,14 @@ h1 {
   position: relative;
 }
 
-button {
+button,
+input[type="submit"] {
   height: 45px;
   border-radius: 6px;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 600;
+  padding: 11px 15px;
 }
 
 header button {
@@ -137,7 +161,7 @@ header button {
 }
 
 .header-btn1 {
-  width: 120px;
+  padding: 11px 15px;
   background-color: #fff;
   border-style: solid;
   border-color: #d73106;
@@ -188,6 +212,13 @@ header button {
   color: #fff;
   left: 12em;
   border-style: none;
+}
+
+.btn-aPropos:hover {
+  background-color: #ffffff;
+  color: #9032b0;
+  font-weight: 700;
+  border: 3px solid #9032b0;
 }
 
 /* section stickers galerie, commande, blog */
@@ -256,6 +287,7 @@ header button {
   text-align: center;
   margin-top: 2em;
   margin-bottom: 0;
+  color: #0f0c26;
 }
 
 .orange-hover:hover {
@@ -285,3 +317,388 @@ header button {
 }
 
 /* section les dernières peintures */
+
+/* A PROPOS */
+
+/* à propos section 1*/
+
+.section-apropos-container h1 {
+  text-align: center;
+}
+
+.section-apropos-container h1 {
+  padding: 2.5em 0 1.5em 0;
+  text-align: center;
+}
+
+.img-page-aPropos {
+  width: 535px;
+  height: 458px;
+}
+
+.section-apropos1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.section-apropos1-txt h2 {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+/* à propos section 2*/
+
+.grey-bg {
+  background-color: #756e82;
+  width: 70%;
+  margin: auto;
+  padding: 1em 3em;
+  color: #fff;
+  margin-bottom: 5em;
+}
+
+hr {
+  width: 25em;
+  position: absolute;
+  top: 4em;
+  left: 30em;
+}
+
+.section-apropos2 h2 {
+  margin: 2em 0 5em;
+  text-align: center;
+}
+
+.section-apropos2-title {
+  position: relative;
+}
+
+.sous-section-apropos2-a,
+.sous-section-apropos2-b {
+  display: flex;
+  justify-content: center;
+}
+
+.section-apropos1-txt,
+.sous-section-apropos2-a-txt,
+.sous-section-apropos2-b-txt {
+  width: 535px;
+  height: 458px;
+  margin: 0 2.5em 5em;
+}
+
+/*PAGE ARCHIVE*/
+
+.archive-container {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin: auto;
+  width: 80%;
+}
+
+.card-container {
+  width: 26.5em;
+  height: 29em;
+  box-shadow: rgba(0, 0, 0, 0.256) 0px 5px 15px;
+  margin-right: 3em;
+  margin-bottom: 3em;
+}
+
+.archive-img {
+  width: 424px;
+  height: 273.52px;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 200;
+}
+.lire-plus {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.card-text-container {
+  width: 25.3125em;
+  height: 8.875em;
+  padding-left: 1em;
+}
+
+.card-text-container h3 {
+  font-size: 20px;
+  margin-bottom: 0.375em;
+}
+
+.archive-container h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.archive-container h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.card-text-container p {
+  margin-bottom: 0.25em;
+  margin-top: 0.375em;
+}
+
+.flex-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* PAGE POST  */
+/* Page post section1 */
+
+.post-container h1 {
+  text-align: center;
+  padding-top: 3em;
+}
+
+.post-section1 {
+  width: 68%;
+  margin: auto;
+  margin-bottom: 5em;
+}
+
+.post-section1 img {
+  width: 1362.88px;
+  height: 691.8px;
+  margin-bottom: 2em;
+}
+
+/* Page post section2 */
+
+.post-section2 {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 7em;
+}
+
+.post-section2 img {
+  width: 535px;
+  height: 458px;
+  padding-right: 2em;
+}
+
+.post-section2-txt {
+  width: 40%;
+}
+
+/* CONTACT */
+/*Formulaire de contact*/
+
+.form-container {
+  padding: 10em 0 10em;
+}
+
+.fname-lname {
+  display: flex;
+}
+
+.support-container {
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #9032b0;
+  color: #fff;
+  padding: 11px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #9032b0;
+  border-style: solid;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* FOOTER */
+
+.fa-angle-up {
+  color: #fff;
+  background-color: #4a3554;
+}
+
+footer {
+  width: 100%;
+  background-color: #e1d6ce;
+}
+
+.footer-container {
+  padding-top: 2em;
+}
+
+.info-footer-container a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.info-footer-container {
+}
+
+.footer-heading h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5em;
+}
+
+.footer-heading h4 {
+  margin-bottom: 2em;
+}
+
+.footer-heading a {
+  color: #0f0c26;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+}
+
+/*  Section newsletter + réseaux sociaux */
+
+.position-nl-soc {
+  position: relative;
+}
+
+.nl-input-container {
+  position: relative;
+}
+
+.newsletter-container h4,
+.social-container h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nl-input-container input {
+  height: 44px;
+  width: 218px;
+}
+
+.btn-nl {
+  color: #fff;
+  padding: 11px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 44px;
+  background-color: #9032b0;
+  border-style: none;
+  position: absolute;
+  top: 5px;
+}
+
+.btn-nl:hover {
+  background-color: #ffffff;
+  color: #9032b0;
+  font-weight: 700;
+  border: 3px solid #9032b0;
+}
+
+.social-container {
+  width: 20%;
+  position: absolute;
+  top: 5em;
+  right: 8em;
+}
+
+.newsletter-container {
+  width: 20%;
+  position: absolute;
+  top: 5em;
+  left: 8em;
+}
+
+.fa-brands {
+  font-size: 35px;
+  padding-right: 0.5em;
+  color: #0f0c26;
+}
+
+.fa-brands:hover {
+  color: #9032b0;
+}
+
+.mentions {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+  font-family: "Poppins", sans-serif;
+}
+
+.mentions a {
+  color: #0f0c26;
+  text-decoration: none;
+  padding-top: 13em;
+}
+
+.position-hr {
+  position: relative;
+}
+.mentions hr {
+  position: absolute;
+  top: 175px;
+  color: #0f0c26;
+  width: 80%;
+  left: 180px;
+  border: 1px solid #0f0c2679;
+  /*margin-top: 22em;*/
+}
+
+.fa-angle-up {
+  display: inline-block;
+  background-color: #4a3554;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 30px;
+  right: 70px;
+  font-size: 50px;
+
+  z-index: 1000;
+}
