@@ -594,13 +594,13 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type="submit"] {
@@ -618,6 +618,73 @@ input[type="submit"]:hover {
   background-color: #ffffff;
   color: #9032b0;
   border: solid 3px #9032b0;
+}
+
+/*PAGE GALERIE*/
+
+.galerie-container {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin: auto;
+  width: 80%;
+}
+
+.painting-container {
+  margin: 2em;
+}
+
+.img-painting-container {
+  width: 354.8px;
+  height: 354.8px;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff; /* Optionnel : couleur de fond du conteneur */
+}
+
+.painting-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* L'image est entièrement visible, avec des barres si nécessaire */
+  object-position: center; /* Centre l'image dans le conteneur */
+  display: block; /* Supprime l'espace blanc en bas de l'image */
+}
+
+.painting-text-container {
+  color: #0f0c26a1;
+}
+
+.painting-text-container h3 {
+  font-size: 20px;
+  margin-bottom: 0.375em;
+  color: #0f0c26;
+}
+
+.painting-text-container a {
+  text-decoration: none;
+}
+
+.galerie-container h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.galerie-container h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.painting-text-container p,
+.painting-text-container h3 {
+  margin-bottom: 0.25em;
+  margin-top: 0.375em;
+  text-align: center;
+}
+
+.flex-paintings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* FOOTER */
