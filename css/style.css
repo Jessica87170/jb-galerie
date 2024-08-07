@@ -492,36 +492,121 @@ hr {
 }
 
 /* CONTACT */
+/*Entête du formulaire de contact*/
+.contact-txt h1 {
+  padding-top: 4em;
+  text-align: center;
+}
+
+.contact-txt p {
+  text-align: left;
+  margin: auto;
+  width: 55em;
+}
+
 /*Formulaire de contact*/
 
-.form-container {
-  padding: 10em 0 10em;
+.contact-form-container {
+  padding: 7em 0 10em;
+  width: 23%;
+  margin: auto;
 }
 
-.fname-lname {
-  display: flex;
+.contact-txt a {
+  color: #d73106;
 }
 
-.support-container {
+.contact-form label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.checkbox1 label,
+.checkbox2 label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#description {
+  height: 15.625em;
+}
+
+.bloc-label,
+.bloc-input {
+  display: block;
+}
+
+.bloc-input,
+#format-select {
+  width: 33.5em;
+}
+
+.bloc-input,
+.name-input,
+#format-select {
+  background-color: #0f0c2608;
+}
+
+.name-input {
+  width: 16.25em;
+}
+
+.contact-name {
+  position: relative;
+}
+
+.name-label {
+  position: absolute;
+  bottom: 60px;
+}
+
+#fname {
+  margin-right: 1em;
+}
+
+.support-container,
+.format-container,
+.question-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #0f0c2608;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #0f0c264b;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: #0f0c2668;
 }
 
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type="submit"] {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #9032b0;
   color: #fff;
   padding: 11px 15px;
@@ -529,18 +614,279 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-color: #ffffff;
   color: #9032b0;
-  border-style: solid;
+  border: solid 3px #9032b0;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+/*PAGE GALERIE*/
+
+.galerie-container {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin: auto;
+  width: 80%;
+}
+
+.painting-container {
+  margin: 2em;
+}
+
+.img-painting-container {
+  width: 354.8px;
+  height: 354.8px;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff; /* Optionnel : couleur de fond du conteneur */
+}
+
+.painting-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* L'image est entièrement visible, avec des barres si nécessaire */
+  object-position: center; /* Centre l'image dans le conteneur */
+  display: block; /* Supprime l'espace blanc en bas de l'image */
+}
+
+.painting-text-container {
+  color: #0f0c26a1;
+}
+
+.painting-text-container h3 {
+  font-size: 20px;
+  margin-bottom: 0.375em;
+  color: #0f0c26;
+}
+
+.painting-text-container a {
+  text-decoration: none;
+}
+
+.galerie-container h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.galerie-container h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.painting-text-container p,
+.painting-text-container h3 {
+  margin-bottom: 0.25em;
+  margin-top: 0.375em;
+  text-align: center;
+}
+
+.flex-paintings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* PAGE PRODUIT */
+.produit-container {
+  padding-top: 5em;
+}
+
+.produit-flex {
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+
+.img-produit-container {
+  width: 709.6px;
+  height: 709.6px;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.description-produit {
+  width: 30em;
+  padding-left: 3em;
+  padding-top: 7em;
+}
+
+.description-produit button {
+  margin-top: 2em;
+}
+
+.produit-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.description-produit h3 {
+  font-size: 20px;
+  margin-bottom: 0.375em;
+  color: #0f0c26;
+}
+
+.description-produit {
+  text-align: center;
+}
+
+.description-produit button {
+  background-color: #ffffff;
+  color: #d73106;
+  border: solid 3px #d73106;
+}
+
+.description-produit button:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #d73106;
+  color: #fff;
+  padding: 11px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Tableau informations produits */
+
+.info-produit-container h4 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tableau-container {
+  margin: auto;
+  width: 42%;
+}
+
+.info-produit-container {
+  padding-bottom: 7em;
+}
+
+.tab-line {
+  border-bottom: #0f0c264d solid 1px;
+  width: 50em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-head {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* CART PAGE */
+
+.cart-container {
+  padding-top: 8em;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+.cart-container {
+  /*padding-top: 10em;*/
+  padding-bottom: 8em;
+  width: 70%;
+  margin: auto;
+}
+
+.cart-container h1 {
+  padding-bottom: 2em;
+}
+
+.img-cart-container {
+  width: 177.4px;
+  height: 177.4px;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+.img-cart {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* L'image est entièrement visible, avec des barres si nécessaire */
+  object-position: center; /* Centre l'image dans le conteneur */
+  display: block; /* Supprime l'espace blanc en bas de l'image */
+}
+
+.cart-painting-container span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-left: 2em;
+}
+
+.cart-painting-container,
+.prix-suppr {
+  display: flex;
+  align-items: center;
+}
+
+.cart-section1 {
+  border-bottom: #0f0c264d solid 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prix-cart1 {
+  margin-right: 10em;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+  /*display: flex;
+  justify-content: space-around;
+  width: 25%;
+  margin-left: 47em;*/
+}
+
+.total {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-right: 7em;
+}
+
+.cart-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3em;
+  width: 100%;
+}
+
+.cart-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #d73106;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 2em;
+}
+
+.cart-btn:hover {
+  background-color: #ffffff;
+  color: #d73106;
+  border: solid 3px #d73106;
+  cursor: pointer;
+}
+
+.fa-xmark {
+  font-size: 26px;
+}
+
+.cart-section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2em;
 }
 
 /* FOOTER */

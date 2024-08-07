@@ -48,18 +48,31 @@
       <!--</div>-->
     </div>
 
-    <div class="form-container">
-      <form class="form" action="action_page.php">
-        <div class="fname-lname">
-          <label for="fname">First Name</label>
+    <div class="contact-txt">
+      <h1>Me contacter pour une commande</h1>
+      <p>
+        S'il vous plaît, veuillez remplir ce formulaire si vous êtes intéressé
+        par une commande. Vous pouvez également m'envoyer un mail à
+        <a href="#">Jb.galerie@outlook.fr</a>. Si vous souhaitez que je peigne à
+        partir d'une photo, veillez à ce que cette dernière soit de qualité.
+      </p>
+    </div>
+
+    <div class="contact-form-container">
+      <form class="contact-form" action="action_page.php" method="POST">
+        <div class="contact-name">
+          <label for="fname" class="name-label">Prénom</label>
           <input
+            class="name-input"
             type="text"
             id="fname"
             name="firstname"
             placeholder="Votre prénom.."
           />
-          <label for="lname">Nom de famille</label>
+
+          <label for="lname" class="name-label">Nom de famille</label>
           <input
+            class="name-input"
             type="text"
             id="lname"
             name="lastname"
@@ -67,26 +80,45 @@
           />
         </div>
 
-        <label for="email" class="champ">Adresse mail</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Votre adresse email.."
-        />
+        <div class="contact-email">
+          <label for="email" class="bloc-label" id="contact-label"
+            >Adresse mail</label
+          >
+          <input
+            class="bloc-input"
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="Votre adresse email.."
+          />
+        </div>
         <div class="support-container">
+          <label class="contact-label">Choix du support</label>
           <div class="checkbox1">
+            <input
+              type="checkbox"
+              class="checkbox-round"
+              id="papier"
+              name="papier"
+              checked
+            />
             <label for="papier">Papier</label>
-            <input type="checkbox" id="papier" name="papier" checked />
           </div>
           <div class="checkbox2">
+            <input
+              type="checkbox"
+              class="checkbox-round"
+              id="toile"
+              name="toile"
+            />
             <label for="toile">Toile</label>
-            <input type="checkbox" id="toile" name="toile" />
           </div>
         </div>
 
         <div class="format-container">
-          <label for="format-select" class="champ">Choisissez un format:</label>
+          <label for="format-select" class="bloc-label"
+            >Choisissez un format:</label
+          >
 
           <select name="format" id="format-select">
             <option value="">--Sélectionnez une option--</option>
@@ -95,23 +127,30 @@
           </select>
         </div>
 
-        <label for="description" class="champ">Description du concept</label>
+        <label for="description" class="bloc-label"
+          >Description du concept</label
+        >
         <textarea
+          class="bloc-input"
           type="text"
           id="description"
           name="description"
           placeholder="Veuillez décrire le concept..."
         >
         </textarea>
-
-        <label for="question" class="champ">Avez-vous une question</label>
-        <textarea
-          id="question"
-          name="question"
-          placeholder="Ecrivez votre question..."
-        >
-        </textarea>
-        <input type="submit" value="Submit" />
+        <div class="question-container">
+          <label for="question" class="bloc-label"
+            >Avez-vous une question?</label
+          >
+          <textarea
+            class="bloc-input"
+            id="question"
+            name="question"
+            placeholder="Ecrivez votre question..."
+          >
+          </textarea>
+        </div>
+        <input type="submit" value="Submit" id="btn-envoyer" />
       </form>
     </div>
 
