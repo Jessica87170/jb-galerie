@@ -15,6 +15,10 @@
 }
 
 */
+body,
+html {
+  max-width: 100%;
+}
 
 * {
   box-sizing: border-box;
@@ -43,9 +47,28 @@ nav ul li a {
 
 /* barre de navigation */
 
-.logo {
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-logo1 {
+  padding-top: 4em;
+  visibility: visible;
+}
+
+.div-logo2 {
+  visibility: hidden;
+}
+
+.logo1 {
   width: 178.07px;
   height: 60.48px;
+}
+
+.logo2 {
+  width: 0;
+  height: 0;
 }
 
 .barre-nav-container {
@@ -358,20 +381,22 @@ header button {
   margin-bottom: 5em;
 }
 
-hr {
+/*hr {
   width: 25em;
-  position: absolute;
+  /* position: absolute;
   top: 4em;
   left: 30em;
-}
+}*/
 
 .section-apropos2 h2 {
-  margin: 2em 0 5em;
+  margin: 2em 0 2em;
   text-align: center;
+  border-bottom: 1px solid;
+  height: 2em;
 }
 
 .section-apropos2-title {
-  position: relative;
+  /*position: relative;*/
 }
 
 .sous-section-apropos2-a,
@@ -945,9 +970,9 @@ footer {
 
 /*  Section newsletter + réseaux sociaux */
 
-.position-nl-soc {
+/*.position-nl-soc {
   position: relative;
-}
+}*/
 
 .nl-input-container {
   position: relative;
@@ -984,7 +1009,7 @@ footer {
   border: 3px solid #9032b0;
 }
 
-.social-container {
+/*.social-container {
   width: 20%;
   position: absolute;
   top: 5em;
@@ -996,7 +1021,7 @@ footer {
   position: absolute;
   top: 5em;
   left: 8em;
-}
+}*/
 
 .fa-brands {
   font-size: 35px;
@@ -1021,19 +1046,21 @@ footer {
   padding-top: 13em;
 }
 
-.position-hr {
+/*.position-hr {
   position: relative;
-}
-.mentions hr {
+}*/
+/*.mentions hr {
   position: absolute;
   top: 175px;
   color: #0f0c26;
   width: 80%;
   left: 180px;
   border: 1px solid #0f0c2679;
-  /*margin-top: 22em;*/
+  /*margin-top: 22em;
+}*/
+.top-btn-container {
+  width: 50px;
 }
-
 .fa-angle-up {
   display: inline-block;
   background-color: #4a3554;
@@ -1047,4 +1074,271 @@ footer {
   font-size: 50px;
 
   z-index: 1000;
+}
+
+/*   MEDIA QUERIES  
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones  }*/
+/*@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. }*/
+/*@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones }*/
+/*@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops  }*/
+/*@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops  }*/
+/*@media (min-width:1281px) { /* hi-res laptops and desktops  }*/
+
+/*   Mobile     */
+@media (min-width: 320px) {
+  /* NAVIGATION MOBILE */
+
+  /* barre de navigation mobile */
+  .logo-container {
+    flex-direction: column-reverse;
+  }
+
+  .div-logo2 {
+    visibility: visible;
+    padding-top: 5em;
+  }
+
+  .logo2 {
+    width: 178.07px;
+    height: 60.48px;
+  }
+  .logo1 {
+    width: 0;
+    height: 0;
+  }
+
+  .div-logo1 {
+    visibility: hidden;
+  }
+
+  .barre-nav-container {
+    background-color: #e1d6ce;
+    width: 100%;
+    height: 5em;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    margin-top: -0.5em;
+  }
+
+  .barre-nav-container li {
+    display: inline-block;
+  }
+
+  .barre-nav-icones {
+    display: flex;
+  }
+
+  .langue {
+    padding-right: 1em;
+  }
+
+  .barre-nav-container li a {
+    padding-right: 2.5em;
+    text-decoration: none;
+  }
+
+  .barre-nav-icones a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #0f0c26;
+    padding-right: 1em;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-left: 0.25em;
+  }
+
+  .fa-solid .fa-globe i,
+  .fa-solid .fa-cart-shopping i {
+    color: #0f0c26;
+    font-size: 18px;
+  }
+
+  /* A PROPOS MOBILE */
+
+  /* à propos section 1*/
+
+  /*.section-apropos-container {
+    width: 100%;
+  }*/
+
+  .section-apropos-container {
+    width: 100%;
+    padding-top: 3em;
+  }
+
+  .section-apropos1 {
+    padding-bottom: 20em;
+  }
+
+  .section-apropos1,
+  .section-apropos2 {
+    margin: auto;
+  }
+
+  .section-apropos1-img {
+    margin-top: 1em;
+  }
+
+  .section-apropos1-txt,
+  .sous-section-apropos2-a-txt,
+  .sous-section-apropos2-b-txt {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #apropos-h1 {
+    text-align: center;
+    font-size: 40px;
+    width: 80%;
+    margin: auto;
+  }
+
+  #photo-artiste {
+    width: 393px;
+    height: 300px;
+    padding-bottom: 1em;
+  }
+
+  .section-apropos1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  .section-apropos1-txt h2 {
+    font-size: 25px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  /* à propos section 2*/
+
+  .grey-bg {
+    background-color: #756e82;
+    width: 95%;
+    color: #fff;
+    margin-bottom: 5em;
+    padding: 0;
+  }
+
+  .sous-section-apropos2-b-img,
+  .sous-section-apropos2-a-img {
+    margin: auto;
+  }
+
+  /*hr {
+    width: 15em;
+    position: absolute;
+    top: 4em;
+    left: 30em;
+  }*/
+
+  .section-apropos2 {
+    padding-bottom: 13em;
+  }
+
+  .sous-section-apropos2-a {
+    padding-bottom: 22em;
+  }
+
+  .section-apropos2 h2 {
+    text-align: center;
+    padding: 1em 0 2em;
+    width: 60%;
+    margin: auto;
+  }
+
+  .sous-section-apropos2-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sous-section-apropos2-b {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .img-page-aPropos2 {
+    width: 325px;
+    height: 290px;
+    margin-top: 3em;
+  }
+
+  /*   FOOTER MOBILE  */
+
+  .footer-heading {
+    margin-right: 0em;
+  }
+
+  .footer-container {
+  }
+
+  .top-btn-container {
+    width: ;
+  }
+
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .soc-icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .newsletter-container {
+    width: 15em;
+    margin: auto;
+    text-align: center;
+  }
+
+  .nl-input-container {
+    padding-bottom: 5em;
+  }
+
+  .newsletter-container h4,
+  .social-container h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .nl-input-container input {
+    height: 44px;
+    width: 218px;
+    margin-bottom: 0;
+  }
+
+  .btn-nl {
+    position: static;
+  }
+
+  .social-container {
+    padding-bottom: 3em;
+  }
+
+  .social-container h4 {
+    text-align: center;
+  }
+
+  .separateur {
+    width: 15em;
+    border-top: #0f0c26 1px solid;
+    margin: auto;
+    padding-top: 2em;
+  }
 }

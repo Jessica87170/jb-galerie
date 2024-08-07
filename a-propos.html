@@ -22,12 +22,30 @@
   </head>
   <body>
     <div class="barre-nav-container">
-      <a href="#"
-        ><img
-          class="logo"
-          src="images/logo.svg"
-          alt="logo Jessiac Bordais galerie "
-      /></a>
+
+      <div class="logo-container">
+        <div class="div-logo1">
+          <a href="#"
+          ><img
+            class="logo1"
+            src="images/logo.svg"
+            alt="logo Jessica Bordais galerie " 
+            
+        /></a>
+
+        </div>
+
+        <div class="div-logo2">
+          <a href="#">
+            <img
+            class="logo2"
+            src="images/illustration-logo.svg"
+            alt="logo Jessica Bordais galerie "
+        /></a>
+        </div>
+     
+     
+</div>
       <!--<div class="menu-icones-group">-->
       <nav class="menu-principal">
         <ul>
@@ -49,11 +67,11 @@
     </div>
 
     <div class="section-apropos-container">
-      <h1>Rencontrez l'artiste</h1>
+      <h1 id="apropos-h1">Rencontrez l'artiste</h1>
       <div class="section-apropos1">
         <div class="section-apropos1-txt">
           <h2>Artiste peintre indépendant</h2>
-          <p>
+          <p id="txt-section1">
             Quapropter a natura mihi videtur potius quam ab indigentia orta
             amicitia, applicatione magis animi cum quodam sensu amandi quam
             cogitatione quantum illa res utilitatis esset habitura. Quod quidem
@@ -73,6 +91,7 @@
             src="images/photo-aPropos.jpg"
             alt="photo de l'artiste"
             class="img-page-aPropos"
+            id="photo-artiste"
             loading="lazy"
           />
         </div>
@@ -81,16 +100,17 @@
       <div class="grey-bg section-apropos2">
         <div class="section-apropos2-title">
           <h2>Expositions</h2>
-          <hr />
+         <!-- <hr />-->
         </div>
 
-        <div class="section-apropos2-contenu">
+        <div class="section-apropos2">
           <div class="sous-section-apropos2-a">
             <div class="sous-section-apropos2-a-img">
               <img
                 src="images/atelier.jpg"
                 alt="atelier"
-                class="img-page-aPropos"
+                class="img-page-aPropos2"
+               
                 loading="lazy"
               />
             </div>
@@ -134,7 +154,7 @@
               <img
                 src="images/exposition.jpg"
                 alt="exposition"
-                class="img-page-aPropos"
+                class="img-page-aPropos2"
                 loading="lazy"
               />
             </div>
@@ -150,35 +170,7 @@
 
       <div class="footer-container">
         <div class="info-footer-container position-nl-soc">
-          <div class="nl-soc-container">
-            <div class="newsletter-container">
-              <div class="nl-text-container">
-                <h4>Newsletter</h4>
-                <p>
-                  Utque aegrum corpus quassari etiam levibus solet offensis, ita
-                  animus eius angustus et tener, quicquid.
-                </p>
-              </div>
-
-              <div class="nl-input-container">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email"
-                />
-                <button class="btn-nl">Envoyer</button>
-              </div>
-            </div>
-
-            <div class="social-container">
-              <h4>Réseaux sociaux</h4>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-square-instagram"></i>
-              <i class="fa-brands fa-pinterest"></i>
-              <i class="fa-brands fa-square-x-twitter"></i>
-            </div>
-          </div>
+          
           <div class="nav-footer">
             <div class="footer-heading footer-sous-nav-accueil">
               <h4><a href="#" class="purple-hover">accueil</a></h4>
@@ -209,12 +201,49 @@
           </div>
         </div>
 
+        <div class="nl-soc-container">
+          <div class="newsletter-container">
+            <div class="nl-text-container">
+              <h4>Newsletter</h4>
+              <p>
+                Utque aegrum corpus quassari etiam levibus solet offensis, ita
+                animus eius angustus et tener, quicquid.
+              </p>
+            </div>
+
+            <div class="nl-input-container">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <button class="btn-nl">Envoyer</button>
+            </div>
+          </div>
+
+          <div class="social-container">
+            <h4>Réseaux sociaux</h4>
+            <div class="soc-icones">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </div>
+          </div>
+        </div>
+
         <div class="mentions position-hr">
-          <hr />
-          <a href="#">Mentions légales | </a>
+          <!--<hr class="separateur "/>-->
+          <!--<p class="separateur">&nbsp;</p>-->
+          <div class="separateur">
+          <a href="#" >Mentions légales | </a>
 
           <a href="#">CGU</a>
         </div>
+        </div>
+
+       
       </div>
     </footer>
 
