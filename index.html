@@ -22,31 +22,171 @@
   </head>
   <body>
     <div class="barre-nav-container">
-      <a href="#"
-        ><img
-          class="logo"
-          src="images/logo.svg"
-          alt="logo Jessiac Bordais galerie "
-      /></a>
-      <!--<div class="menu-icones-group">-->
-      <nav class="menu-principal">
-        <ul>
-          <li><a href="#" class="purple-hover">accueil</a></li>
-          <li><a href="#" class="purple-hover">à propos</a></li>
-          <li><a href="#" class="orange-hover">galerie</a></li>
-          <li><a href="#" class="purple-hover">commande</a></li>
-          <li><a href="#" class="purple-hover">blog</a></li>
-        </ul>
-      </nav>
+      <div class="barre-nav-flex">
+        <div class="logo-container">
+          <div class="div-logo1">
+            <a href="index.html"
+              ><img
+                class="logo1"
+                src="images/logo.svg"
+                alt="logo Jessica Bordais galerie "
+            /></a>
+          </div>
 
-      <div class="barre-nav-icones">
-        <div class="langue">
-          <i class="fa-solid fa-globe"></i><a href="#">fr</a>
+          <div class="div-logo2">
+            <a href="index.html">
+              <img
+                class="logo2"
+                src="images/illustration-logo.svg"
+                alt="logo Jessica Bordais galerie "
+            /></a>
+          </div>
         </div>
-        <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+
+        <!--  <nav class="menu-principal">
+          <ul>
+            <li><a href="index.html" class="purple-hover">accueil</a></li>
+            <li><a href="a-propos.html" class="purple-hover">à propos</a></li>
+            <li><a href="galerie.html" class="orange-hover">galerie</a></li>
+            <li><a href="commande.html" class="purple-hover">commande</a></li>
+            <li><a href="archive.html" class="purple-hover">blog</a></li>
+          </ul>
+        </nav>-->
+
+        <nav class="menu-principal">
+          <ul>
+            <li class="menu-deroulant">
+              <a href="index.html" class="purple-hover">Accueil</a>
+            </li>
+
+            <li class="menu-deroulant arrow">
+              <a href="a-propos.html" class="purple-hover disabled">à propos</a>
+              <ul class="sous-menu">
+                <li>
+                  <a href="a-propos.html">L'artiste</a>
+                </li>
+                <li>
+                  <a href="faq.html" id="faq-link">FAQ</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-deroulant arrow">
+              <a href="galerie.html" class="orange-hover disabled">Galerie</a>
+              <ul class="sous-menu">
+                <li class="bg-orange-hover">
+                  <a href="galerie.html">Paysage</a>
+                </li>
+                <li class="bg-orange-hover">
+                  <a href="galerie.html">Portrait</a>
+                </li>
+                <li class="bg-orange-hover">
+                  <a href="galerie.html">Divers</a>
+                </li>
+                <li class="bg-orange-hover"><a href="galerie.html">Tout</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-deroulant arrow">
+              <a href="commande.html" class="purple-hover disabled">Commande</a>
+              <ul class="sous-menu">
+                <li><a href="commande.html">Informations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li><a href="archive.html" class="purple-hover">Blog</a></li>
+          </ul>
+        </nav>
+
+        <div class="menuburger">
+          <div class="menu-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+
+        <!--  <div class="barre-nav-icones">
+          <div class="langue">
+            <i class="fa-solid fa-globe"></i><a href="#">fr</a>
+          </div>
+          <div class="cart">
+            <a href="panier.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>-->
       </div>
-      <!--</div>-->
     </div>
+
+    <nav class="menuburger_nav" id="burger-nav">
+      <div class="lang"></div>
+      <ul>
+        <li class="menu-deroulant-burger nav_list_item">
+          <a class="nav_link" href="index.html">Accueil</a>
+        </li>
+        <hr class="hr-menu-small" />
+        <li class="menu-deroulant-burger dropdown arrow-burger">
+          <label class="dropdown">à propos</label>
+          <hr class="hr-menu-small" />
+          <ul class="sous-menu-burger dropdown-content">
+            <li class="nav_list_item">
+              <a class="nav_link" href="faq.html" id="faq-link"
+                >Foire aux questions</a
+              >
+            </li>
+            <li class="nav_list_item">
+              <a
+                class="nav_link"
+                href="a-propos.html"
+                id="faq-link"
+                class="animBurger"
+                >L'artiste</a
+              >
+            </li>
+            <hr class="hr-menu" />
+          </ul>
+        </li>
+
+        <li class="menu-deroulant-burger dropdown arrow-burger">
+          <label>Galerie</label>
+          <hr class="hr-menu-small" />
+          <ul class="sous-menu-burger dropdown-content">
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Paysage</a>
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Portrait</a>
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Divers</a>
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Tout</a>
+            </li>
+            <hr class="hr-menu" />
+          </ul>
+        </li>
+
+        <li class="menu-deroulant-burger dropdown arrow-burger">
+          <label>Commande</label>
+          <hr class="hr-menu-small" />
+          <ul class="sous-menu-burger dropdown-content">
+            <li class="nav_list_item">
+              <a class="nav_link" href="contact.html" class="animBurger"
+                >Contact</a
+              >
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="commande.html">Informations</a>
+            </li>
+            <hr class="hr-menu" />
+          </ul>
+        </li>
+        <li class="menu-deroulant-burger nav_list_item">
+          <a href="archive.html">Blog</a>
+        </li>
+        <hr class="hr-menu-small" />
+      </ul>
+    </nav>
 
     <header>
       <div class="hero-container">
@@ -60,10 +200,13 @@
               papier, <br />
               réalisées avec passion et précision.
             </p>
-            <p></p>
             <div class="btn-container">
-              <button class="header-btn1">Explorer</button>
-              <button class="header-btn2">En savoir plus</button>
+              <a href="galerie.html"
+                ><button class="header-btn1">Explorer</button></a
+              >
+              <a href="commande.html"
+                ><button class="header-btn2">En savoir plus</button></a
+              >
             </div>
           </div>
         </div>
@@ -78,19 +221,25 @@
           promptior laudato consilio consensit in pacem ea ratione maxime
           percita, quod norat expeditionibus crebris fortunam eius in malis….
         </p>
-        <a href="#"> <button class="btn-aPropos">En savoir plus</button></a>
+        <div class="btn-aPropos-sctn-cntnr">
+          <a href="a-propos.html">
+            <button class="btn-aPropos">En savoir plus</button></a
+          >
+        </div>
       </div>
-
-      <img
-        class="img-aPropos"
-        src="images/photo-aPropos.jpg"
-        alt="photo de l'artiste"
-      />
+      <div class="img-aPropos-cntnr-home">
+        <img
+          id="img-aPropos-home"
+          class="img-aPropos"
+          src="images/photo-aPropos.jpg"
+          alt="photo de l'artiste"
+        />
+      </div>
     </div>
 
     <div class="page-stickers-container">
       <div class="sticker-galerie-container sticker-container">
-        <a href="#">
+        <a href="galerie.html">
           <div class="bg-sticker-galerie bg-sticker">
             <img
               class="sticker-galerie sticker"
@@ -100,7 +249,7 @@
           </div>
         </a>
         <div class="sticker-text-container">
-          <a href="#">
+          <a href="galerie.html">
             <h2 class="orange-hover">Galerie</h2>
           </a>
           <p>Mox dicta finierat, multitudo omnis ad, quae imperator voluit.</p>
@@ -108,7 +257,7 @@
       </div>
 
       <div class="sticker-commande-container sticker-container">
-        <a href="#">
+        <a href="commande.html">
           <div class="bg-sticker-commande bg-sticker">
             <img
               class="sticker-commande sticker"
@@ -118,7 +267,7 @@
           </div>
         </a>
         <div class="sticker-text-container">
-          <a href="#">
+          <a href="commande.html">
             <h2 class="purple-hover">Commande</h2>
           </a>
           <p>Mox dicta finierat, multitudo omnis ad, quae imperator voluit.</p>
@@ -126,13 +275,13 @@
       </div>
 
       <div class="sticker-blog-container sticker-container">
-        <a href="#">
+        <a href="archive.html">
           <div class="bg-sticker-blog bg-sticker">
             <img class="sticker-blog sticker" src="images/carnet.svg" alt="" />
           </div>
         </a>
         <div class="sticker-text-container">
-          <a href="#">
+          <a href="archive.html">
             <h2 class="purple-hover">Blog</h2>
           </a>
           <p>Mox dicta finierat, multitudo omnis ad, quae imperator voluit.</p>
@@ -142,165 +291,232 @@
 
     <div class="last-paintings-container">
       <h2>Les dernières peintures</h2>
-      <div>
-        <div>
-          <img src="" alt="" />
+      <div class="flex-paintings-home">
+        <div class="painting-container">
+          <div class="img-painting-container-home">
+            <img class="painting-img" src="images/painting1.jpg" alt="" />
+          </div>
+          <div class="painting-text-container">
+            <a href="single-galerie.html">
+              <h3 class="orange-hover">Titre de la peinture</h3></a
+            >
+            <p class="prix">20€</p>
+            <p class="dimensions">40 cm x 40cm</p>
+          </div>
         </div>
-
-        <div>
-          <h3></h3>
-          <p></p>
-          <p></p>
+        <div class="painting-container">
+          <div class="img-painting-container-home">
+            <img class="painting-img" src="images/painting1.jpg" alt="" />
+          </div>
+          <div class="painting-text-container">
+            <a href="single-galerie.html">
+              <h3 class="orange-hover">Titre de la peinture</h3></a
+            >
+            <p class="prix">20€</p>
+            <p class="dimensions">40 cm x 40cm</p>
+          </div>
+        </div>
+        <div class="painting-container">
+          <div class="img-painting-container-home">
+            <img class="painting-img" src="images/painting4.jpg" alt="" />
+          </div>
+          <div class="painting-text-container">
+            <a href="single-galerie.html">
+              <h3 class="orange-hover">Titre de la peinture</h3></a
+            >
+            <p class="prix">20€</p>
+            <p class="dimensions">40 cm x 40cm</p>
+          </div>
         </div>
       </div>
 
-      <div>
-        <div>
-          <img src="" alt="" />
-        </div>
-
-        <div>
-          <h3></h3>
-          <p></p>
-          <p></p>
-        </div>
+      <div class="btn-paintings-container">
+        <a href="galerie.html"><button>Voir les dernières peintures</button></a>
       </div>
-
-      <div>
-        <div>
-          <img src="" alt="" />
-        </div>
-
-        <div>
-          <h3></h3>
-          <p></p>
-          <p></p>
-        </div>
-      </div>
-
-      <button></button>
     </div>
 
-    <div class="faqLink-container">
-      <span></span>
-      <button></button>
+    <div class="faq-link-container">
+      <div class="btn-msg-faq">
+        <p>Une question? N'hésitez pas à consulter la FAQ</p>
+        <div class="btn-faq-div-home">
+          <a href="faq.html"
+            ><button class="btn-faq-home">Consulter la FAQ</button></a
+          >
+        </div>
+      </div>
     </div>
 
     <div class="last-posts-container">
-      <div class="post1">
-        <img src="" alt="" />
-
-        <div>
-          <h3></h3>
-          <p></p>
-          <p></p>
+      <h2>Les derniers articles</h2>
+      <div class="flex-cards-home">
+        <div class="card-container-home">
+          <div class="img-card-container-home">
+            <img class="archive-img-home" src="images/blog-img.jpg" alt="" />
+          </div>
+          <div class="card-text-container-home">
+            <h3><a href="post.html" class="purple-hover"> Titre article</a></h3>
+            <p>
+              Ut enim benefici liberalesque sumus, non ut exigamus gratiam neque
+              enim beneficium...
+            </p>
+            <a href="post.html" class="lire-plus purple-hover">Lire plus</a>
+            <p class="date">Septembre 2024</p>
+          </div>
+        </div>
+        <div class="card-container-home">
+          <div class="img-card-container-home">
+            <img class="archive-img-home" src="images/blog-img.jpg" alt="" />
+          </div>
+          <div class="card-text-container-home">
+            <h3><a href="post.html" class="purple-hover"> Titre article</a></h3>
+            <p>
+              Ut enim benefici liberalesque sumus, non ut exigamus gratiam neque
+              enim beneficium...
+            </p>
+            <a href="post.html" class="lire-plus purple-hover">Lire plus</a>
+            <p class="date">Septembre 2024</p>
+          </div>
+        </div>
+        <div class="card-container-home">
+          <div class="img-card-container-home">
+            <img class="archive-img-home" src="images/blog-img.jpg" alt="" />
+          </div>
+          <div class="card-text-container-home">
+            <h3><a href="post.html" class="purple-hover"> Titre article</a></h3>
+            <p>
+              Ut enim benefici liberalesque sumus, non ut exigamus gratiam neque
+              enim beneficium...
+            </p>
+            <a href="post.html" class="lire-plus purple-hover">Lire plus</a>
+            <p class="date">Septembre 2024</p>
+          </div>
         </div>
       </div>
 
-      <div class="post2">
-        <img src="" alt="" />
-
-        <div>
-          <h3></h3>
-          <p></p>
-          <p></p>
-        </div>
+      <div class="btn-articles-container">
+        <a href="archive.html">
+          <button class="btn-articles">Voir tout les articles</button></a
+        >
       </div>
-
-      <div class="post3">
-        <img src="" alt="" />
-
-        <div>
-          <h3></h3>
-          <p></p>
-          <p></p>
-        </div>
-      </div>
-
-      <button></button>
     </div>
 
     <div class="comments-container"></div>
     <footer>
-      <div class="top-btn-container">
+      <div onclick="topFunction()" class="top-btn-container" id="topbtn">
         <a id="button-top"><i class="fa-solid fa-angle-up"></i></a>
       </div>
 
       <div class="footer-container">
-        <div class="info-footer-container position-nl-soc">
-          <div class="nl-soc-container">
-            <div class="newsletter-container">
-              <div class="nl-text-container">
-                <h4>Newsletter</h4>
-                <p>
-                  Utque aegrum corpus quassari etiam levibus solet offensis, ita
-                  animus eius angustus et tener, quicquid.
-                </p>
-              </div>
-
-              <div class="nl-input-container">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email"
-                />
-                <button class="btn-nl">Envoyer</button>
-              </div>
+        <!--<div class="info-footer-container position-nl-soc">-->
+        <div class="nav-footer">
+          <div class="newsletter-container">
+            <div class="nl-text-container">
+              <h4>Newsletter</h4>
+              <p>
+                Utque aegrum corpus quassari etiam levibus solet offensis, ita
+                animus eius angustus et tener, quicquid.
+              </p>
             </div>
 
-            <div class="social-container">
-              <h4>Réseaux sociaux</h4>
+            <div class="nl-input-container">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <button class="btn-nl">Envoyer</button>
+            </div>
+          </div>
+
+          <div class="footer-heading footer-sous-nav-accueil">
+            <h4><a href="#" class="purple-hover">accueil</a></h4>
+          </div>
+
+          <div class="footer-heading footer-sous-nav-apropos">
+            <h4><a href="#" class="purple-hover">à propos</a></h4>
+            <a href="#" class="purple-hover">FAQ</a>
+          </div>
+
+          <div class="footer-heading footer-sous-nav-galerie">
+            <h4><a href="#" class="orange-hover">galerie</a></h4>
+            <a href="#" class="orange-hover">Paysages</a>
+            <a href="#" class="orange-hover">Portraits</a>
+            <a href="#" class="orange-hover">Divers</a>
+            <a href="#" class="orange-hover">Tout</a>
+          </div>
+
+          <div class="footer-heading footer-sous-nav-commande">
+            <h4><a href="#" class="purple-hover">commande</a></h4>
+            <a href="#" class="purple-hover">Contact</a>
+            <i class="fa-solid fa-envelope purple-hover"
+              ><a href="#" class="purple-hover"> jb.galerie@mail.fr</a></i
+            >
+          </div>
+
+          <div class="footer-heading footer-sous-nav-blog">
+            <h4><a href="#" class="purple-hover">blog</a></h4>
+          </div>
+
+          <div class="social-container">
+            <h4>Réseaux sociaux</h4>
+            <div class="soc-icones">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-square-instagram"></i>
               <i class="fa-brands fa-pinterest"></i>
               <i class="fa-brands fa-square-x-twitter"></i>
             </div>
           </div>
-          <div class="nav-footer">
-            <div class="footer-heading footer-sous-nav-accueil">
-              <h4><a href="#" class="purple-hover">accueil</a></h4>
-            </div>
-
-            <div class="footer-heading footer-sous-nav-apropos">
-              <h4><a href="#" class="purple-hover">à propos</a></h4>
-              <a href="#">FAQ</a>
-            </div>
-
-            <div class="footer-heading footer-sous-nav-galerie">
-              <h4><a href="#" class="orange-hover">galerie</a></h4>
-              <a href="#">Paysages</a>
-              <a href="#">Portraits</a>
-              <a href="#">Divers</a>
-              <a href="#">Tout</a>
-            </div>
-
-            <div class="footer-heading footer-sous-nav-commande">
-              <h4><a href="#" class="purple-hover">commande</a></h4>
-              <a href="#">Contact</a>
-              <a href="#">jb.galerie@mail.fr</a>
-            </div>
-
-            <div class="footer-heading footer-sous-nav-blog">
-              <h4><a href="#" class="purple-hover">blog</a></h4>
-            </div>
-          </div>
         </div>
 
-        <div class="mentions position-hr">
-          <hr />
-          <a href="#">Mentions légales | </a>
+        <!--</div>-->
 
-          <a href="#">CGU</a>
+        <!-- <div class="nl-soc-container">
+          <div class="newsletter-container">
+            <div class="nl-text-container">
+              <h4>Newsletter</h4>
+              <p>
+                Utque aegrum corpus quassari etiam levibus solet offensis, ita
+                animus eius angustus et tener, quicquid.
+              </p>
+            </div>
+
+            <div class="nl-input-container">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <button class="btn-nl">Envoyer</button>
+            </div>
+          </div>
+
+          <div class="social-container">
+            <h4>Réseaux sociaux</h4>
+            <div class="soc-icones">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+          </div>
+        </div>-->
+
+        <div class="mentions position-hr">
+          <!--<hr class="separateur "/>-->
+          <!--<p class="separateur">&nbsp;</p>-->
+          <div class="separateur">
+            <p>
+              <a href="#" class="purple-hover">Mentions légales &nbsp;</a>
+              <i> | </i>
+              <a href="#" class="purple-hover"> &nbsp;CGU</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
-  </body>
-</html>
-
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

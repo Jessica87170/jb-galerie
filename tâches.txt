@@ -1,0 +1,11 @@
+Ce qui reste à faire
+
+-hover sur mobile ? 
+-mettre tout le curseur en pointer
+-Zoomer sur les peintures en survolant avec la souris sur bureau et avec le doigt sur mobile
+-Remplacer le lorem ipsum
+-prendre des photos des peinture que j'ai
+-media queries tablette 
+-Annuler l'effet zoom des stickers index sur mobile?
+- appliquer les templates de pages pour chaque peinture/article 
+- Mettre les liens dans le footer
