@@ -111,7 +111,7 @@ nav ul li a {
   display: flex;
 }
 .langue {
-  padding-right: 1em;
+ /* padding-right: 1em;
 }*/
 
 /* menu déroulant */
@@ -261,7 +261,7 @@ li a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  min-height: 73.3652vh;
+  height: 73.3652vh;
   color: #fff;
   font-size: 24px;
   text-align: center;
@@ -269,7 +269,7 @@ li a {
 
 .img-overlay {
   width: 100%;
-  min-height: 73.3652vh;
+  height: 73.3652vh;
   background-color: #0f0c26a4;
 }
 
@@ -348,12 +348,12 @@ header button a {
 
 button,
 input[type="submit"] {
-  height: 45px;
   border-radius: 6px;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 600;
   padding: 11px 15px;
+  border: none;
 }
 
 /**menu burger**/
@@ -1390,7 +1390,7 @@ input[type="submit"]:hover {
   cursor: pointer;
   font-size: 1.2rem;
   width: 100%;
-  padding: 2rem 2.5rem;
+  padding: 0.5em 2em;
   border: none;
   outline: none;
   transition: 0.4s;
@@ -1480,6 +1480,16 @@ footer {
   padding-top: 2em;
 }
 
+.footer-com {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
 .fa-envelope a {
   font-weight: 500;
 }
@@ -1494,11 +1504,6 @@ footer {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
-}
-
-.nav-footer {
-  display: flex;
-  justify-content: center;
 }
 
 .footer-heading {
@@ -1532,11 +1537,6 @@ footer {
   justify-content: space-around;
 }*/
 
-.newsletter-container,
-.social-container {
-  padding-top: 7em;
-}
-
 .newsletter-container h4,
 .social-container h4 {
   font-family: "Montserrat", sans-serif;
@@ -1559,7 +1559,7 @@ footer {
 }
 
 .newsletter-container {
-  width: 20%;
+  width: 25%;
 }
 
 .fa-brands {
@@ -1629,7 +1629,241 @@ footer {
 	// rules here apply to devices from 0px to 768px (inclusive)
 	...
 }*/
-/*   Mobile     */
+
+/* GRANDE TABLETTE */
+@media (max-width: 1280px) {
+  /* Navigation grande tablette */
+
+  .disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .menu-principal > ul > li {
+    width: 18%;
+  }
+
+  /* PAGE A PROPOS GRANDE TABLETTE */
+  .grey-bg {
+    background-color: #65606f;
+    width: 80%;
+    margin: auto;
+    padding: 1em 3em;
+    color: #fff;
+    margin-bottom: 5em;
+  }
+}
+
+/* MOYENNE TABLETTE ????? */
+@media (max-width: 1024px) {
+  /* Navigation tablette myenne */
+
+  .menu-principal > ul > li {
+    width: 20%;
+  }
+
+  .disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+/* PETITE TABLETTE  */
+@media (max-width: 992px) {
+  /* NAVIGATION PETITE TABLETTE */
+
+  .barre-nav-flex {
+    width: 100%;
+    justify-content: start;
+  }
+
+  .menu-principal > ul {
+    /*justify-content: center;*/
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu-principal ul li {
+    width: 120px;
+  }
+
+  .menu-principal ul {
+    border-left: #0f0c26 solid 1px;
+    border-right: #0f0c26 solid 1px;
+    margin-left: 1em;
+  }
+
+  .div-logo1 {
+    padding-left: 0.5em;
+  }
+
+  /*  HEADER PETITE TABLETTE   */
+
+  .img-overlay,
+  .hero-container {
+    width: 100%;
+    min-height: 43vh;
+    background-color: #0f0c26a4;
+  }
+
+  /* Index section fac tablette */
+  .faq-link-container {
+    height: 9em;
+  }
+
+  .disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  /*  APROPOS PETITE TABLETTE  */
+
+  .img-page-aPropos {
+    width: 435px;
+    height: 358px;
+  }
+
+  .section-apropos1-img {
+    margin: auto;
+  }
+
+  .section-apropos1-txt,
+  .sous-section-apropos2-a-txt,
+  .sous-section-apropos2-b-txt {
+    margin: 0 2.5em 0;
+    margin-bottom: 10em;
+  }
+
+  .grey-bg {
+    width: 95%;
+    margin: auto;
+  }
+
+  .section-apropos1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+
+  .sous-section-apropos2-a-img,
+  .sous-section-apropos2-b-img {
+    margin: auto;
+  }
+
+  /*  FAQ PETITE TABLETTE  */
+
+  .accordion {
+    padding: 0.5em;
+  }
+
+  /*  COMMANDE PETITE TABLETTE */
+
+  .contact-link-container {
+    height: 10em;
+  }
+
+  /*  PANIER PETITE TABLETTE  */
+
+  .cart-container {
+    /* padding-top: 10em; */
+    padding-bottom: 8em;
+    width: 85%;
+    margin: auto;
+  }
+
+  /*  ARCHIVES PETITE TABLETTE*/
+
+  .card-container {
+    width: 21.1em;
+    height: 25.5em;
+  }
+
+  .archive-img {
+    width: 338.39px;
+    height: 190.05px;
+  }
+
+  .card-text-container {
+    padding: 0 0.5em 0 0.5em;
+  }
+
+  .card-text-container p {
+    width: 80%;
+  }
+
+  .archive-container {
+    width: 100%;
+  }
+
+  /*  POST PETITE TABLETTE  */
+
+  .post-section1 img {
+    width: 100%;
+    height: 30em;
+    margin-bottom: 2em;
+  }
+
+  .post-section2 img {
+    width: 267.5px;
+    height: 229px;
+  }
+
+  .post-section2-txt {
+    width: 60%;
+  }
+
+  .post-section1,
+  .post-section2 {
+    width: 75%;
+  }
+
+  .post-section2-txt {
+    width: 80%;
+  }
+
+  /*  GALERIE PETITE TABLETTE  */
+
+  .galerie-container {
+    width: 100%;
+  }
+
+  .img-painting-container {
+    width: 216.66px;
+    height: 216.66px;
+  }
+
+  /* SINGLE PAGE GALERIE PETITE TABLETTE*/
+  .produit-flex {
+    width: 85%;
+  }
+
+  #support {
+    width: 35%;
+  }
+
+  /*  CONTACT PETITE TABLETTE  */
+
+  .contact-txt h1 {
+    font-size: 45px;
+  }
+
+  .contact-txt p {
+    width: 90%;
+  }
+
+  .contact-form-container {
+    width: 50%;
+  }
+
+  /*  FOOTER PETITE TABLETTE */
+
+  .newsletter-container,
+  .social-container {
+    width: 35%;
+  }
+}
+
+/*   MOBILE    */
 @media (max-width: 768px) {
   /*BODY*/
 
@@ -1898,7 +2132,8 @@ footer {
   /*  HERO HEADER MOBILE  */
 
   .img-overlay {
-    min-height: 100vh;
+    height: 100vh;
+    padding-top: 1em;
   }
 
   #h1-home {
@@ -1918,7 +2153,7 @@ footer {
   }
 
   .hero-container {
-    min-height: 100vh;
+    height: 100vh;
     color: #fff;
     font-size: 24px;
     text-align: center;
@@ -2259,21 +2494,57 @@ footer {
     width: 10em;
   }
 
+  /* CART MOBILE  */
+
+  .cart-section1 {
+    border-bottom: #0f0c264d solid 1px;
+    display: inline;
+  }
+
+  .cart-container {
+    width: 100%;
+  }
+
+  .cart-section2 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    margin-top: 2em;
+    width: 180px;
+  }
+
+  .cart-painting-container,
+  .prix-suppr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .prix-cart1 {
+    margin-right: 0;
+  }
+
+  .total-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+  }
+
   /*PAGE ARCHIVE MOBILE : Enlever du paragraphe dans la version mobile (mettre 2.5 lignes ou 3*/
 
   .archive-container {
     padding-top: 5em;
     padding-bottom: 5em;
     margin: auto;
-    width: 80%;
+    width: 100%;
   }
 
   .card-container {
-    width: 21em;
-    height: 24em;
-    box-shadow: rgba(0, 0, 0, 0.256) 0px 5px 15px;
-    margin: auto;
-    margin-bottom: 2.5em;
+    width: 300px;
+    height: 22.5em;
+    margin-right: 0;
   }
 
   .hidden-text {
@@ -2285,33 +2556,35 @@ footer {
     overflow: hidden;
   }
   .archive-img {
-    width: 322px;
-    height: 223.61px;
+    width: 300px;
+    height: 168.48px;
   }
 
   .date {
     font-size: 14px;
     font-weight: 200;
+    text-align: center;
   }
   .lire-plus {
     font-family: "Poppins", sans-serif;
     text-decoration: none;
+    text-align: center;
   }
 
   .card-text-container {
-    width: 19.125em;
-    height: 8.25em;
+    width: 18em;
+    padding: 0 0.25em 0 0.25em;
     text-align: center;
   }
 
   .card-text-container h3 {
-    font-size: 20px;
-    margin-bottom: 0;
-    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
   }
 
   .archive-container h1 {
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
   }
 
@@ -2324,9 +2597,11 @@ footer {
   .card-text-container p {
     margin-bottom: 0.25em;
     margin-top: 0.375em;
+    width: 100%;
   }
 
   .flex-cards {
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -2411,15 +2686,15 @@ footer {
     margin-right: 0em;
   }
 
-  .top-btn-container {
-    width: ;
+  .newsletter-container,
+  .social-container {
+    width: 60%;
   }
 
   .social-container,
   .newsletter-container,
   .social-container {
     padding-top: 7em;
-
     padding-top: 0.5em;
   }
 
@@ -2427,16 +2702,11 @@ footer {
     padding-bottom: 2em;
   }
 
-  .nav-footer {
+  .footer-nav,
+  .footer-com {
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-
-  .soc-icones {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
 
   .newsletter-container {
@@ -2502,39 +2772,3 @@ footer {
     right: 2em;
   }
 }
-
-/* TABLETTE  */
-
-@media (max-width: 992px) {
-  /* NAVIGATION TABLETTE */
-  .barre-nav-flex {
-    width: 100%;
-  }
-  .menu-principal > ul {
-    justify-content: center;
-  }
-
-  .menu-principal ul li {
-    width: 120px;
-  }
-
-  /*  HEADER TABLETTE   */
-
-  .img-overlay,
-  .hero-container {
-    width: 100%;
-    min-height: 43vh;
-    background-color: #0f0c26a4;
-  }
-
-  /* Index section fac tablette */
-  .faq-link-container {
-    height: 9em;
-  }
-
-  .disabled {
-    pointer-events: none;
-    cursor: default;
-  }
-
- 

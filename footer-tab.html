@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Jessica Bordais galerie</title>
+  </head>
+  <body>
+    <nav class="menuburger_nav" id="burger-nav">
+      <div class="lang"></div>
+      <ul>
+        <li class="menu-deroulant-burger nav_list_item">
+          <a class="nav_link" href="index.html">Accueil</a>
+        </li>
+        <hr class="hr-menu-small" />
+        <li class="menu-deroulant-burger dropdown arrow-burger">
+          <label class="dropdown">à propos</label>
+          <hr class="hr-menu-small" />
+          <ul class="sous-menu-burger dropdown-content">
+            <li class="nav_list_item">
+              <a class="nav_link" href="faq.html" id="faq-link"
+                >Foire aux questions</a
+              >
+            </li>
+            <li class="nav_list_item">
+              <a
+                class="nav_link"
+                href="a-propos.html"
+                id="faq-link"
+                class="animBurger"
+                >L'artiste</a
+              >
+            </li>
+            <hr class="hr-menu" />
+          </ul>
+        </li>
+
+        <li class="menu-deroulant-burger dropdown arrow-burger">
+          <label>Galerie</label>
+          <hr class="hr-menu-small" />
+          <ul class="sous-menu-burger dropdown-content">
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Paysage</a>
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Portrait</a>
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Divers</a>
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Tout</a>
+            </li>
+            <hr class="hr-menu" />
+          </ul>
+        </li>
+
+        <li class="menu-deroulant-burger dropdown arrow-burger">
+          <label>Commande</label>
+          <hr class="hr-menu-small" />
+          <ul class="sous-menu-burger dropdown-content">
+            <li class="nav_list_item">
+              <a class="nav_link" href="contact.html" class="animBurger"
+                >Contact</a
+              >
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="commande.html">Informations</a>
+            </li>
+            <hr class="hr-menu" />
+          </ul>
+        </li>
+        <li class="menu-deroulant-burger nav_list_item">
+          <a href="archive.html">Blog</a>
+        </li>
+        <hr class="hr-menu-small" />
+      </ul>
+    </nav>
+
+    <footer>
+      <div class="footer-container">
+        <div onclick="topFunction()" class="top-btn-container" id="topbtn">
+          <a id="button-top"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+
+        <!--<div class="info-footer-container position-nl-soc">-->
+        <div class="flex-footer">
+          <div class="footer-nav">
+            <div class="footer-heading footer-sous-nav-accueil">
+              <h4><a href="#" class="purple-hover">accueil</a></h4>
+            </div>
+
+            <div class="footer-heading footer-sous-nav-apropos">
+              <h4><a href="#" class="purple-hover">à propos</a></h4>
+              <a href="#" class="purple-hover">FAQ</a>
+            </div>
+
+            <div class="footer-heading footer-sous-nav-galerie">
+              <h4><a href="#" class="orange-hover">galerie</a></h4>
+              <a href="#" class="orange-hover">Paysages</a>
+              <a href="#" class="orange-hover">Portraits</a>
+              <a href="#" class="orange-hover">Divers</a>
+              <a href="#" class="orange-hover">Tout</a>
+            </div>
+
+            <div class="footer-heading footer-sous-nav-commande">
+              <h4><a href="#" class="purple-hover">commande</a></h4>
+              <a href="#" class="purple-hover">Contact</a>
+              <i class="fa-solid fa-envelope purple-hover"
+                ><a href="#" class="purple-hover"> jb.galerie@mail.fr</a></i
+              >
+            </div>
+
+            <div class="footer-heading footer-sous-nav-blog">
+              <h4><a href="#" class="purple-hover">blog</a></h4>
+            </div>
+          </div>
+
+          <div class="footer-com">
+            <div class="newsletter-container">
+              <div class="nl-text-container">
+                <h4>Newsletter</h4>
+                <p>
+                  Utque aegrum corpus quassari etiam levibus solet offensis, ita
+                  animus eius angustus et tener, quicquid.
+                </p>
+              </div>
+
+              <div class="nl-input-container">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+                <button class="btn-nl">Envoyer</button>
+              </div>
+            </div>
+
+            <div class="social-container">
+              <h4>Réseaux sociaux</h4>
+              <div class="soc-icones">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--</div>-->
+
+        <!-- <div class="nl-soc-container">
+          <div class="newsletter-container">
+            <div class="nl-text-container">
+              <h4>Newsletter</h4>
+              <p>
+                Utque aegrum corpus quassari etiam levibus solet offensis, ita
+                animus eius angustus et tener, quicquid.
+              </p>
+            </div>
+
+            <div class="nl-input-container">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <button class="btn-nl">Envoyer</button>
+            </div>
+          </div>
+
+          <div class="social-container">
+            <h4>Réseaux sociaux</h4>
+            <div class="soc-icones">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+          </div>
+        </div>-->
+
+        <div class="mentions position-hr">
+          <!--<hr class="separateur "/>-->
+          <!--<p class="separateur">&nbsp;</p>-->
+          <div class="separateur">
+            <p>
+              <a href="#" class="purple-hover">Mentions légales &nbsp;</a>
+              <i> | </i>
+              <a href="#" class="purple-hover"> &nbsp;CGU</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

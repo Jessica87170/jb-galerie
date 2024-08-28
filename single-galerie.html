@@ -60,16 +60,19 @@
             </li>
 
             <li class="menu-deroulant arrow">
-              <a href="a-propos.html" class="purple-hover">à propos</a>
+              <a href="a-propos.html" class="purple-hover disabled">à propos</a>
               <ul class="sous-menu">
                 <li>
-                  <a href="faq.html" id="faq-link">Foire aux questions</a>
+                  <a href="a-propos.html">L'artiste</a>
+                </li>
+                <li>
+                  <a href="faq.html" id="faq-link">FAQ</a>
                 </li>
               </ul>
             </li>
 
             <li class="menu-deroulant arrow">
-              <a href="galerie.html" class="orange-hover">Galerie</a>
+              <a href="galerie.html" class="orange-hover disabled">Galerie</a>
               <ul class="sous-menu">
                 <li class="bg-orange-hover">
                   <a href="galerie.html">Paysage</a>
@@ -85,8 +88,9 @@
             </li>
 
             <li class="menu-deroulant arrow">
-              <a href="commande.html" class="purple-hover">Commande</a>
+              <a href="commande.html" class="purple-hover disabled">Commande</a>
               <ul class="sous-menu">
+                <li><a href="commande.html">Informations</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </li>
@@ -102,18 +106,87 @@
           </div>
         </div>
 
-        
-      <!-- <div class="barre-nav-icones">
+        <!--  <div class="barre-nav-icones">
           <div class="langue">
             <i class="fa-solid fa-globe"></i><a href="#">fr</a>
           </div>
           <div class="cart">
             <a href="panier.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
-        </div>--> 
-      
+        </div>-->
       </div>
     </div>
+
+    <nav class="menuburger_nav" id="burger-nav">
+      <div class="lang"></div>
+      <ul>
+        <li class="menu-deroulant-burger nav_list_item">
+          <a class="nav_link" href="index.html">Accueil</a>
+        </li>
+        <hr class="hr-menu-small" />
+        <li class="menu-deroulant-burger dropdown arrow-burger">
+          <label class="dropdown">à propos</label>
+          <hr class="hr-menu-small" />
+          <ul class="sous-menu-burger dropdown-content">
+            <li class="nav_list_item">
+              <a class="nav_link" href="faq.html" id="faq-link"
+                >Foire aux questions</a
+              >
+            </li>
+            <li class="nav_list_item">
+              <a
+                class="nav_link"
+                href="a-propos.html"
+                id="faq-link"
+                class="animBurger"
+                >L'artiste</a
+              >
+            </li>
+            <hr class="hr-menu" />
+          </ul>
+        </li>
+
+        <li class="menu-deroulant-burger dropdown arrow-burger">
+          <label>Galerie</label>
+          <hr class="hr-menu-small" />
+          <ul class="sous-menu-burger dropdown-content">
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Paysage</a>
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Portrait</a>
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Divers</a>
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="galerie.html">Tout</a>
+            </li>
+            <hr class="hr-menu" />
+          </ul>
+        </li>
+
+        <li class="menu-deroulant-burger dropdown arrow-burger">
+          <label>Commande</label>
+          <hr class="hr-menu-small" />
+          <ul class="sous-menu-burger dropdown-content">
+            <li class="nav_list_item">
+              <a class="nav_link" href="contact.html" class="animBurger"
+                >Contact</a
+              >
+            </li>
+            <li class="nav_list_item">
+              <a class="nav_link" href="commande.html">Informations</a>
+            </li>
+            <hr class="hr-menu" />
+          </ul>
+        </li>
+        <li class="menu-deroulant-burger nav_list_item">
+          <a href="archive.html">Blog</a>
+        </li>
+        <hr class="hr-menu-small" />
+      </ul>
+    </nav>
 
     <nav class="menuburger_nav" id="burger-nav">
       <div class="lang"></div>
@@ -237,15 +310,48 @@
 
     
    
-
     <footer>
-      <div onclick="topFunction()" class="top-btn-container" id="topbtn">
-        <a id="button-top"><i class="fa-solid fa-angle-up"></i></a>
-      </div>
-
       <div class="footer-container">
+        <div onclick="topFunction()" class="top-btn-container" id="topbtn">
+          <a id="button-top"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+
         <!--<div class="info-footer-container position-nl-soc">-->
-        <div class="nav-footer">
+
+        <div class="footer-nav">
+          <div class="footer-heading footer-sous-nav-accueil">
+            <h4><a href="index.html" class="purple-hover">accueil</a></h4>
+          </div>
+
+          <div class="footer-heading footer-sous-nav-apropos">
+            <h4><a href="a-propos.html" class="purple-hover">à propos</a></h4>
+            <a href="a-propos.html" class="purple-hover">L'artiste</a>
+            <a href="faq.html" class="purple-hover">FAQ</a>
+          </div>
+
+          <div class="footer-heading footer-sous-nav-galerie">
+            <h4><a href="galerie.html" class="orange-hover">galerie</a></h4>
+            <a href="galerie.html" class="orange-hover">Paysages</a>
+            <a href="galerie.html" class="orange-hover">Portraits</a>
+            <a href="galerie.html" class="orange-hover">Divers</a>
+            <a href="galerie.html" class="orange-hover">Tout</a>
+          </div>
+
+          <div class="footer-heading footer-sous-nav-commande">
+            <h4><a href="commande.html" class="purple-hover">commande</a></h4>
+            <a href="commande.html" class="purple-hover">Informations</a>
+            <a href="contact.html" class="purple-hover">Contact</a>
+            <i class="fa-solid fa-envelope purple-hover"
+              ><a href="#" class="purple-hover"> jb.galerie@mail.fr</a></i
+            >
+          </div>
+
+          <div class="footer-heading footer-sous-nav-blog">
+            <h4><a href="archive.html" class="purple-hover">blog</a></h4>
+          </div>
+        </div>
+
+        <div class="footer-com">
           <div class="newsletter-container">
             <div class="nl-text-container">
               <h4>Newsletter</h4>
@@ -264,35 +370,6 @@
               />
               <button class="btn-nl">Envoyer</button>
             </div>
-          </div>
-
-          <div class="footer-heading footer-sous-nav-accueil">
-            <h4><a href="#" class="purple-hover">accueil</a></h4>
-          </div>
-
-          <div class="footer-heading footer-sous-nav-apropos">
-            <h4><a href="#" class="purple-hover">à propos</a></h4>
-            <a href="#" class="purple-hover">FAQ</a>
-          </div>
-
-          <div class="footer-heading footer-sous-nav-galerie">
-            <h4><a href="#" class="orange-hover">galerie</a></h4>
-            <a href="#" class="orange-hover">Paysages</a>
-            <a href="#" class="orange-hover">Portraits</a>
-            <a href="#" class="orange-hover">Divers</a>
-            <a href="#" class="orange-hover">Tout</a>
-          </div>
-
-          <div class="footer-heading footer-sous-nav-commande">
-            <h4><a href="#" class="purple-hover">commande</a></h4>
-            <a href="#" class="purple-hover">Contact</a>
-            <i class="fa-solid fa-envelope purple-hover"
-              ><a href="#" class="purple-hover"> jb.galerie@mail.fr</a></i
-            >
-          </div>
-
-          <div class="footer-heading footer-sous-nav-blog">
-            <h4><a href="#" class="purple-hover">blog</a></h4>
           </div>
 
           <div class="social-container">
